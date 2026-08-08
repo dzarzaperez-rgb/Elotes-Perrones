@@ -4,6 +4,7 @@ import { useProducts } from '../store/products';
 import { Flame, Star, Coins, X, CheckCircle, ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
 import Chatbot from '../components/Chatbot';
 import LocationMap from '../components/LocationMap';
+import BackgroundAudio from '../components/BackgroundAudio';
 export default function Landing() {
   const { products, loading } = useProducts();
   const [cashbackBalance, setCashbackBalance] = useState(0);
@@ -348,6 +349,7 @@ export default function Landing() {
         </div>
       )}
       <Chatbot />
+      <BackgroundAudio />
     </>
   );
 }
