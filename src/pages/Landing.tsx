@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useProducts } from '../store/products';
 import { Flame, Star, Coins, X, CheckCircle, ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
-import { Product } from '../types';
-
+import Chatbot from '../components/Chatbot';
+import LocationMap from '../components/LocationMap';
 export default function Landing() {
   const { products, loading } = useProducts();
   const [cashbackBalance, setCashbackBalance] = useState(0);
@@ -240,6 +240,7 @@ export default function Landing() {
             )}
           </div>
         </section>
+        <LocationMap />
       </main>
 
       {/* Cart Modal */}
@@ -346,6 +347,7 @@ export default function Landing() {
           </div>
         </div>
       )}
+      <Chatbot />
     </>
   );
 }
