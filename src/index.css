@@ -170,7 +170,7 @@ ul {
 .hero {
   padding: 8rem 0;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/elotes-parallax.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/elote-corazon.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
